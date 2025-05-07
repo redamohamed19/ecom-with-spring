@@ -1,5 +1,7 @@
 package com.reda.ecom.Services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,5 +15,9 @@ public class MenuItemService {
 
 	public MenuItem saveMenuItem(MenuItem menuItem) {
 		return repository.save(menuItem);
+	}
+
+	public List<MenuItem> getMenuItems() {
+		return repository.findAll();
 	}
 }
