@@ -14,11 +14,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderItem {
+public class OrderItem extends BaseEntity {
 
-	@Id
-	@GeneratedValue
-	private Integer id;
+
 	
 	private Integer quantity;
 	

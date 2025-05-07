@@ -15,11 +15,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Restaurant {
+public class Restaurant extends BaseEntity {
 	
-	@Id
-	@GeneratedValue
-	private Integer id;
+
 	
 	private String name;
 	

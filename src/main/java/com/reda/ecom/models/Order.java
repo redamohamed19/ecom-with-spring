@@ -18,11 +18,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "_order")
-public class Order {
+public class Order extends BaseEntity {
 	
-	@Id
-	@GeneratedValue
-	private Integer id;
+	
 	
 	private String status;
 	

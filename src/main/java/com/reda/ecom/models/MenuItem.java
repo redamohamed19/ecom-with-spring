@@ -13,11 +13,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class MenuItem {
+public class MenuItem extends BaseEntity {
 
-	@Id
-	@GeneratedValue
-	private Integer id;
+
 	
 	private String name;
 	

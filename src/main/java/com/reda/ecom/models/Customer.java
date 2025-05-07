@@ -16,11 +16,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Customer {
+public class Customer extends BaseEntity {
 	
-	@Id
-	@GeneratedValue
-	private Integer id;
+
 	
 	@Column(unique = true)
 	private String userName;
