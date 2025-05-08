@@ -11,7 +11,7 @@ spring:
     hibernate:
       # Controls how Hibernate handles schema generation:
       # - `create`: Drops and recreates the schema at each app startup.
-      ddl-auto: create
+      ddl-auto: update
 
     # Enables logging of generated SQL queries to the console
     show-sql: true

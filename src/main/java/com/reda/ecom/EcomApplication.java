@@ -3,7 +3,6 @@ package com.reda.ecom;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import com.github.javafaker.Faker;
 import com.reda.ecom.Services.CustomerService;
@@ -20,7 +19,7 @@ public class EcomApplication {
 		SpringApplication.run(EcomApplication.class, args);
 	}
 
-	@Bean
+	// @Bean
 	public CommandLineRunner commandLineRunner(RestaurantService restaurantService, MenuItemService menuItemService,
 			CustomerService customerService) {
 		return Args -> {

@@ -2,6 +2,8 @@ package com.reda.ecom.models;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
@@ -23,6 +25,7 @@ public class Customer extends BaseEntity {
 	@Column(unique = true)
 	private String email;
 
+	@JsonManagedReference
 	@OneToMany(mappedBy = "customer")
 	private List<Order> orders;
 
